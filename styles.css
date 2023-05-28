@@ -1,0 +1,124 @@
+body {
+
+  background-image: url(image2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Aleo';
+  margin-top: 10px;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    background-image: linear-gradient(to right, #FDCEDF, #bfe9ff);    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-family: 'Aleo';
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    text-shadow: 2px 2px  #fff;
+    /* text-align: center; */
+  }
+  
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-left: none;
+    margin-right: 10px;
+
+  }
+ 
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+  }
+  button:hover {
+    transform: perspective(500px) rotateX(3deg) rotateY(5deg);
+  }
+  button:active{
+      transform: scale(0.95);
+    
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  .task:hover{
+    transform: scale(1.1);
+
+  }
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  .low-priority {
+    border-color: #8bc34a;
+    background-color:#8bc34a ;
+  }
+  
+  .medium-priority {
+    border-color: #ffc107;
+    background-color: #ffc107;
+
+  }
+  
+  .high-priority {
+    border-color: #f44336;
+    background-color: #f44336;
+
+  }
+  
+  .complete-button,
+  .delete-button {
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .complete-button:hover,
+  .delete-button:hover {
+    color: #fff;
+  }
+  
